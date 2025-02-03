@@ -13,4 +13,6 @@ COPY . .
 
 EXPOSE 8000
 
+RUN python3 -m pip check yt-dlp
+
 CMD ["python3", "bot.py"]
